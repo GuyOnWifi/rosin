@@ -1,0 +1,26 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a52"/>
+      <stop offset="1" stop-color="#e2531f"/>
+    </linearGradient>
+    <linearGradient id="tip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4e8"/>
+      <stop offset="1" stop-color="#ffd3a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg)"/>
+  <g transform="rotate(-45 256 256)">
+    <!-- handle -->
+    <rect x="206" y="120" width="100" height="170" rx="26" fill="#241006" opacity="0.92"/>
+    <rect x="224" y="150" width="64" height="10" rx="5" fill="#ffae73"/>
+    <rect x="224" y="176" width="64" height="10" rx="5" fill="#ffae73"/>
+    <rect x="224" y="202" width="64" height="10" rx="5" fill="#ffae73"/>
+    <!-- shaft -->
+    <rect x="236" y="284" width="40" height="70" fill="#3a1a0a"/>
+    <!-- tip -->
+    <path d="M236 348 h40 l-8 56 a12 12 0 0 1 -24 0 z" fill="url(#tip)"/>
+  </g>
+  <!-- heat glow -->
+  <circle cx="350" cy="362" r="30" fill="#fff" opacity="0.18"/>
+</svg>
