@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material You dark surface — matches the web app's default dark theme.
+         Runtime code repaints these to the live seed/mode; this is the value
+         applied at window creation so the status bar is never black. -->
+    <color name="md_surface">#1F1B16</color>
+</resources>

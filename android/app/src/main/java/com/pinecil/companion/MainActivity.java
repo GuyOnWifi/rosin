@@ -1,0 +1,11 @@
+package com.pinecil.companion;
+
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {
+    @Override
+    public void onCreate(android.os.Bundle savedInstanceState) {
+        registerPlugin(SystemThemePlugin.class);
+        super.onCreate(savedInstanceState);
+    }
+}
