@@ -13,10 +13,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icon.svg'],
       manifest: {
-        name: 'Pinecil Companion',
-        short_name: 'Pinecil',
+        name: 'Rosin',
+        short_name: 'Rosin',
         description:
-          'Material You companion for the Pinecil V2 soldering iron over Bluetooth',
+          'A Material You companion for the Pinecil V2 soldering iron over Bluetooth',
         theme_color: '#ff7a3d',
         background_color: '#141218',
         display: 'standalone',

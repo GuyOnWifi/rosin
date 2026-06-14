@@ -1,4 +1,4 @@
-package com.pinecil.companion;
+package dev.easonhuang.rosin;
 
 import com.getcapacitor.BridgeActivity;
 

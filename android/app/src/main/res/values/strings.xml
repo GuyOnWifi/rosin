@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Pinecil Companion</string>
-    <string name="title_activity_main">Pinecil Companion</string>
-    <string name="package_name">com.pinecil.companion</string>
-    <string name="custom_url_scheme">com.pinecil.companion</string>
+    <string name="app_name">Rosin</string>
+    <string name="title_activity_main">Rosin</string>
+    <string name="package_name">dev.easonhuang.rosin</string>
+    <string name="custom_url_scheme">dev.easonhuang.rosin</string>
 </resources>

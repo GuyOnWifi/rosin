@@ -34,7 +34,7 @@ export default function App() {
 
   const title = connected
     ? { monitor: 'Monitor', settings: 'Settings', device: 'Device' }[tab]
-    : 'Pinecil'
+    : 'Rosin'
 
   return (
     <div className="app-shell">

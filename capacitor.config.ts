@@ -1,8 +1,8 @@
 import type { CapacitorConfig } from '@capacitor/cli'
 
 const config: CapacitorConfig = {
-  appId: 'com.pinecil.companion',
-  appName: 'Pinecil Companion',
+  appId: 'dev.easonhuang.rosin',
+  appName: 'Rosin',
   webDir: 'dist',
   backgroundColor: '#141218',
   android: {

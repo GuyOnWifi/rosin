@@ -26,7 +26,7 @@ export function Connect({
       <div className="connect-art">
         <Icon name="settings_input_svideo" fill size={72} />
       </div>
-      <h2 className="headline-medium">Pinecil Companion</h2>
+      <h2 className="headline-medium">Rosin</h2>
       <p className="body-large">
         Monitor and tune your Pinecil V2 in real time over Bluetooth — wrapped in
         Material&nbsp;You.

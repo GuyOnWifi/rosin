@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.pinecil.companion"
+    namespace "dev.easonhuang.rosin"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.pinecil.companion"
+        applicationId "dev.easonhuang.rosin"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -1,9 +1,9 @@
 {
-  "name": "pinecil-companion",
+  "name": "rosin",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Material You companion app for the Pinecil V2 soldering iron over Bluetooth LE",
+  "description": "Rosin — a Material You companion for the Pinecil V2 soldering iron over Bluetooth LE",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

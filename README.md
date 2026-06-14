@@ -1,4 +1,4 @@
-# Pinecil Companion
+# Rosin
 
 A **Material You** (Material Design 3) companion app for the **Pinecil V2**
 soldering iron, talking to it over **Bluetooth LE** ([IronOS BLE spec](https://ralim.github.io/IronOS/Bluetooth/)).
