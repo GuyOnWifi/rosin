@@ -43,7 +43,7 @@ export default function App() {
           {title}
           {connected && (
             <div className="subtitle body-small">
-              {pc.info?.name} · IronOS {pc.info?.build}
+              {pc.info?.name}, IronOS {pc.info?.build}
             </div>
           )}
         </h1>

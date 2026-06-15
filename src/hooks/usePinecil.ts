@@ -97,7 +97,7 @@ export function usePinecil(): PinecilState {
           return next.length > HISTORY ? next.slice(next.length - HISTORY) : next
         })
       } catch {
-        /* transient read failure — keep polling */
+        /* transient read failure - keep polling */
       }
     }
     poll()
@@ -192,7 +192,7 @@ export function usePinecil(): PinecilState {
 
   // Setting writes take effect immediately (in the iron's RAM). We additionally
   // persist them to flash automatically, debounced so a burst of changes (e.g.
-  // dragging a slider) results in a single flash write once things settle —
+  // dragging a slider) results in a single flash write once things settle -
   // matching how IronOS saves on menu exit, without an explicit Save button.
   const scheduleSave = useCallback(() => {
     if (saveTimer.current) clearTimeout(saveTimer.current)

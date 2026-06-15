@@ -31,7 +31,7 @@ export function Gauge({ temp, setpoint, max, mode, unit }: Props) {
   const color = tempColor(temp, unit)
 
   const heating = temp + 6 < setpoint
-  const modeLabel = OPERATING_MODE_LABEL[mode] ?? '—'
+  const modeLabel = OPERATING_MODE_LABEL[mode] ?? '-'
 
   return (
     <div className="gauge-wrap">

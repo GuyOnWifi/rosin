@@ -15,7 +15,7 @@ export const SVC_LIVE = `d85ef000${LIVE_SUFFIX}`
 export const SVC_SETTINGS = `f6d80000${SETTINGS_SUFFIX}`
 export const SVC_BULK = `9eae1000${BULK_SUFFIX}`
 
-// Bulk service — one read returns the entire live-data frame.
+// Bulk service - one read returns the entire live-data frame.
 export const CHAR_BULK_LIVE_DATA = `9eae1001${BULK_SUFFIX}`
 export const CHAR_BULK_ACCEL_NAME = `9eae1002${BULK_SUFFIX}`
 export const CHAR_BULK_BUILD = `9eae1003${BULK_SUFFIX}`
@@ -117,7 +117,7 @@ export interface LiveData {
   setpointTemp: number // °C
   dcVoltage: number // V
   handleTemp: number // °C
-  pwmLevel: number // 0–100 %
+  pwmLevel: number // 0-100 %
   powerSrc: PowerSource
   tipResistance: number // Ω
   uptime: number // s
@@ -156,7 +156,7 @@ export function decodeString(view: DataView): string {
 }
 
 export function decodeUint(view: DataView): number {
-  // Variable-width little-endian unsigned int (1–4 bytes).
+  // Variable-width little-endian unsigned int (1-4 bytes).
   let result = 0
   for (let i = view.byteLength - 1; i >= 0; i--) {
     result = result * 256 + view.getUint8(i)

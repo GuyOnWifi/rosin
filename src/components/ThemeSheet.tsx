@@ -48,7 +48,7 @@ export function ThemeSheet({
             <div className="row-text">
               <div className="title-medium row-title">Use system colours</div>
               <div className="body-small row-sub">
-                Follow Android’s wallpaper-based Material You palette
+                Follow Android's wallpaper-based Material You palette
               </div>
             </div>
             <Switch checked={dynamic} onChange={onDynamic} />
@@ -56,8 +56,8 @@ export function ThemeSheet({
         )}
         <p className="body-medium" style={{ color: 'var(--md-sys-color-on-surface-variant)', margin: '4px 0 8px' }}>
           {dynamic
-            ? 'Following your device’s Material You colours. Pick a colour below to override.'
-            : 'Pick a seed colour — the whole app re-tones from it, just like Android.'}
+            ? "Following your device's Material You colours. Pick a colour below to override."
+            : 'Pick a seed colour. The whole app re-tones from it, just like Android.'}
         </p>
         <div className="color-dots">
           {SEED_PRESETS.map((p) => (

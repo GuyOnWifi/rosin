@@ -5,7 +5,7 @@ import { Setting } from '../ble/protocol'
 import type { PinecilState } from '../hooks/usePinecil'
 import { tempRange, unitSymbol, type Unit } from '../lib/format'
 
-// Brightness is stored as a raw value (25·level − 24) for level 1–5.
+// Brightness is stored as a raw value (25*level - 24) for level 1-5.
 const rawToLevel = (raw: number) => Math.max(1, Math.min(5, Math.round((raw + 24) / 25)))
 const levelToRaw = (level: number) => 25 * level - 24
 
@@ -63,7 +63,7 @@ function buildGroups(unit: Unit): Group[] {
     {
       title: 'Motion',
       items: [
-        { kind: 'slider', key: Setting.AccelSensitivity, icon: 'vibration', title: 'Motion sensitivity', sub: '0 off · 9 most sensitive', min: 0, max: 9, step: 1 },
+        { kind: 'slider', key: Setting.AccelSensitivity, icon: 'vibration', title: 'Motion sensitivity', sub: '0 off, 9 most sensitive', min: 0, max: 9, step: 1 },
         { kind: 'slider', key: Setting.HallSensitivity, icon: 'sensors', title: 'Hall sensitivity', sub: 'Magnetic sleep (if fitted)', min: 0, max: 9, step: 1 },
       ],
     },
@@ -82,7 +82,7 @@ function buildGroups(unit: Unit): Group[] {
     {
       title: 'Buttons & screens',
       items: [
-        { kind: 'toggle', key: Setting.InvertButtons, icon: 'swap_horiz', title: 'Swap +/− buttons', sub: 'Invert button assignment' },
+        { kind: 'toggle', key: Setting.InvertButtons, icon: 'swap_horiz', title: 'Swap +/- buttons', sub: 'Invert button assignment' },
         { kind: 'toggle', key: Setting.SolderScreenDetails, icon: 'view_agenda', title: 'Detailed solder screen' },
         { kind: 'toggle', key: Setting.IdleScreenDetails, icon: 'dashboard', title: 'Detailed idle screen' },
       ],
@@ -108,7 +108,7 @@ export function SettingsScreen({ pc }: { pc: PinecilState }) {
     ;(async () => {
       const out: Record<number, number> = {}
       for (const item of items) {
-        // Retry once — BLE reads can transiently fail under contention.
+        // Retry once - BLE reads can transiently fail under contention.
         for (let attempt = 0; attempt < 2; attempt++) {
           try {
             const raw = await pc.readSetting(item.key)
@@ -135,7 +135,7 @@ export function SettingsScreen({ pc }: { pc: PinecilState }) {
       <div className="banner info fade-in content-narrow" style={{ marginTop: 16 }}>
         <Icon name="sync_problem" />
         <div className="body-medium">
-          Couldn’t reach the iron’s settings service. Make sure Bluetooth is switched
+          Couldn't reach the iron's settings service. Make sure Bluetooth is switched
           on in IronOS (Settings → Advanced → Bluetooth), then reconnect.
         </div>
       </div>

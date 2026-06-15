@@ -1,6 +1,6 @@
 // Material You dynamic colour. We generate a full tonal scheme from a single
-// seed colour using Google's HCT-based material-color-utilities — the exact
-// algorithm Android uses for "Material You" — then project it onto CSS custom
+// seed colour using Google's HCT-based material-color-utilities - the exact
+// algorithm Android uses for "Material You" - then project it onto CSS custom
 // properties (`--md-sys-color-*`) consumed by the stylesheet.
 
 import {
@@ -73,7 +73,7 @@ export function applyTheme(seedHex: string, mode: Mode): void {
   if (meta) meta.content = vars['--md-sys-color-surface-container']
 }
 
-// A small curated set of seed colours users can pick — plus the Pinecil orange.
+// A small curated set of seed colours users can pick - plus the Pinecil orange.
 export const SEED_PRESETS: { name: string; hex: string }[] = [
   { name: 'Pinecil', hex: '#ff7a3d' },
   { name: 'Ember', hex: '#e5484d' },

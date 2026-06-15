@@ -14,6 +14,6 @@ export async function applyNativeChrome(mode: Mode, surfaceHex: string): Promise
     // Style.Dark => light icons (for a dark surface); Style.Light => dark icons.
     await StatusBar.setStyle({ style: mode === 'dark' ? Style.Dark : Style.Light })
   } catch {
-    /* plugin unavailable — ignore */
+    /* plugin unavailable - ignore */
   }
 }

@@ -43,16 +43,16 @@ export function Device({ info, live, transportKind, onDisconnect }: Props) {
           <div className="title-large">{info?.name ?? 'Pinecil'}</div>
           <div className="body-medium" style={{ color: 'var(--md-sys-color-on-surface-variant)' }}>
             <span className="dot" style={{ background: 'var(--md-sys-color-primary)', marginRight: 6 }} />
-            Connected · {transportKind === 'native' ? 'Native BLE' : 'Web Bluetooth'}
+            Connected, {transportKind === 'native' ? 'Native BLE' : 'Web Bluetooth'}
           </div>
         </div>
       </div>
 
       <div className="section-label label-medium">Identity</div>
       <div className="card">
-        <InfoRow icon="memory" label="IronOS build" value={info?.build ?? '—'} />
-        <InfoRow icon="tag" label="Serial number" value={info?.deviceSn ?? '—'} />
-        <InfoRow icon="fingerprint" label="Device ID" value={info?.deviceId ?? '—'} />
+        <InfoRow icon="memory" label="IronOS build" value={info?.build ?? '-'} />
+        <InfoRow icon="tag" label="Serial number" value={info?.deviceSn ?? '-'} />
+        <InfoRow icon="fingerprint" label="Device ID" value={info?.deviceId ?? '-'} />
         {live && (
           <InfoRow icon="schedule" label="Uptime" value={fmtDuration(live.uptime)} />
         )}

@@ -13,7 +13,7 @@ export class CapacitorBleTransport implements Transport {
   private initialised = false
 
   async isSupported(): Promise<boolean> {
-    // On a native build the plugin is always present. Don't initialize here —
+    // On a native build the plugin is always present. Don't initialize here -
     // that would trigger the runtime permission prompt on app launch. We defer
     // initialization to selectDevice(), i.e. when the user taps Connect.
     return true

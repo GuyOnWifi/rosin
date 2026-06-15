@@ -46,7 +46,7 @@ export class PinecilClient {
   private settingsAvailable = false
   private deviceId: string | null = null
   // Serialise every GATT operation. A BLE connection allows only one
-  // read/write in flight at a time — overlapping the 1 Hz live poll with
+  // read/write in flight at a time - overlapping the 1 Hz live poll with
   // settings reads makes the native stack reject ops, which previously showed
   // up as settings falling back to their minimum. This queue prevents that.
   private opChain: Promise<unknown> = Promise.resolve()
@@ -103,7 +103,7 @@ export class PinecilClient {
     await this.transport.connect(onDisconnect)
 
     // IronOS BLE (latest stable v2.23) is a plain on/off toggle with no
-    // read-only mode — once connected, the settings service is present and
+    // read-only mode - once connected, the settings service is present and
     // fully read/write. So we assume full write access.
     this.settingsAvailable = true
 
@@ -120,9 +120,9 @@ export class PinecilClient {
     ])
     return {
       name,
-      build: build ? decodeString(build) : '—',
-      deviceSn: sn ? decodeHex(sn).padStart(16, '0') : '—',
-      deviceId: id ? decodeHex(id) : '—',
+      build: build ? decodeString(build) : '-',
+      deviceSn: sn ? decodeHex(sn).padStart(16, '0') : '-',
+      deviceId: id ? decodeHex(id) : '-',
     }
   }
 

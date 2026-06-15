@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Rosin — a Material You companion for the Pinecil V2 soldering iron over Bluetooth LE",
+  "description": "Rosin: a Material You companion for the Pinecil V2 soldering iron over Bluetooth LE",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,7 +11,7 @@
     "cap:sync": "npm run build && cap sync",
     "android": "npm run build && cap sync android && cap open android",
     "android:run": "npm run build && cap run android",
-    "desktop": "npm run build && electron electron/main.cjs"
+    "desktop": "npm run build && npx --yes electron@^33 electron/main.cjs"
   },
   "dependencies": {
     "@capacitor-community/bluetooth-le": "^6.0.1",
@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^6.1.2",
-    "electron": "^33.2.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/web-bluetooth": "^0.0.20",

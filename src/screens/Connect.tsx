@@ -28,7 +28,7 @@ export function Connect({
       </div>
       <h2 className="headline-medium">Rosin</h2>
       <p className="body-large">
-        Monitor and tune your Pinecil V2 in real time over Bluetooth — wrapped in
+        Monitor and tune your Pinecil V2 in real time over Bluetooth, wrapped in
         Material&nbsp;You.
       </p>
 
@@ -43,7 +43,7 @@ export function Connect({
         <div className="banner">
           <Icon name="bluetooth_disabled" />
           <div className="body-medium">
-            Bluetooth isn’t available here. Open this in Chrome on Android/desktop,
+            Bluetooth isn't available here. Open this in Chrome on Android/desktop,
             or install the native app.
           </div>
         </div>
@@ -89,8 +89,8 @@ export function Connect({
         <Icon name={transportKind === 'native' ? 'smartphone' : 'public'} />
         <div className="body-small">
           {transportKind === 'native'
-            ? 'Native Bluetooth · turn on the iron, enable BLE in IronOS settings, then pair.'
-            : 'Web Bluetooth · turn on the iron and enable BLE in IronOS settings (Advanced → Bluetooth). Requires HTTPS + Chrome.'}
+            ? 'Native Bluetooth. Turn on the iron, enable BLE in IronOS settings, then pair.'
+            : 'Web Bluetooth. Turn on the iron and enable BLE in IronOS settings (Advanced → Bluetooth). Requires HTTPS + Chrome.'}
         </div>
       </div>
     </div>

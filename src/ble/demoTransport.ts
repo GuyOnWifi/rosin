@@ -1,4 +1,4 @@
-// Synthetic transport — exercises the *real* decode path with fabricated bytes
+// Synthetic transport - exercises the *real* decode path with fabricated bytes
 // so the UI can be explored without a physical Pinecil. Enabled with `?demo`.
 import {
   CHAR_BULK_BUILD,

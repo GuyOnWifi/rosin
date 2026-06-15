@@ -118,7 +118,7 @@ export function Monitor({ pc }: { pc: PinecilState }) {
       <div className="card" style={{ marginTop: 4 }}>
         <div className="stat-head" style={{ marginBottom: 6 }}>
           <Icon name="show_chart" size={18} />
-          <span className="label-medium">LIVE TRACE · {unitSymbol(unit)}</span>
+          <span className="label-medium">LIVE TRACE {unitSymbol(unit)}</span>
         </div>
         <Sparkline data={history} />
       </div>
@@ -139,7 +139,7 @@ export function Monitor({ pc }: { pc: PinecilState }) {
           label="SOURCE"
           value={
             <span style={{ fontSize: 20 }}>
-              {POWER_SOURCE_LABEL[live.powerSrc] ?? '—'}
+              {POWER_SOURCE_LABEL[live.powerSrc] ?? '-'}
             </span>
           }
         />

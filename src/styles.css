@@ -12,14 +12,14 @@
   --md-shape-xl: 28px;
   --md-shape-full: 999px;
 
-  /* Safe-area insets — native code sets --safe-*; env() covers iOS/PWA.
+  /* Safe-area insets - native code sets --safe-*; env() covers iOS/PWA.
      We take whichever is larger so content clears the system bars. */
   --safe-top: 0px;
   --safe-bottom: 0px;
   --inset-top: max(env(safe-area-inset-top), var(--safe-top));
   --inset-bottom: max(env(safe-area-inset-bottom), var(--safe-bottom));
 
-  /* Motion — MD3 emphasized easing */
+  /* Motion - MD3 emphasized easing */
   --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
   --ease-emphasized-decel: cubic-bezier(0.05, 0.7, 0.1, 1);
   --ease-standard: cubic-bezier(0.2, 0, 0, 1);
